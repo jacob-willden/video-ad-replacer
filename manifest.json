@@ -1,0 +1,11 @@
+{
+    "name": "Video Ad Replacer",
+    "description": "Support content creators while replacing video advertisements with pleasant alternatives.",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "webNavigation",
+        "https://*.youtube.com/*"
+    ],
+    "background": {"scripts": ["background.js"], "persistent": false}
+}
