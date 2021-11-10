@@ -4,8 +4,17 @@
     "version": "0.0.0.1",
     "manifest_version": 2,
     "permissions": [
+        "storage",
         "webNavigation",
         "https://*.youtube.com/*"
     ],
-    "background": {"scripts": ["background.js"], "persistent": false}
+    "background": {"scripts": ["background.js"], "persistent": false},
+    "browser_action": {},
+    "content_scripts": [{
+        "all_frames": true, 
+        "js": ["content.js"],
+        "matches": [
+            "https://*.youtube.com/*"
+        ]
+    }]
 }

@@ -30,6 +30,22 @@
     code in this page.
 */
 
+var extensionActivated = true;
+
+chrome.browserAction.onClicked.addListener(function() {
+    extensionActivated = !extensionActivated;
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {message: "toggleAdReplacer", extensionActivated: extensionActivated});
+    });
+    if(extensionActivated) {
+        chrome.browserAction.setBadgeText({text: "On"});
+    }
+    else {
+        chrome.browserAction.setBadgeText({text: "Off"});
+    }
+    console.log("extensionActivated: " + extensionActivated);
+});
+
 /* 
     Inject the content script programmatically below (requires host permissions), so the user doesn't need to refresh the page for the content script to run
     From Natalie Chouinard on Stack Overflow, with an addition from wOxxOm on Stack Overflow
@@ -37,7 +53,6 @@
     https://stackoverflow.com/questions/20865581/chrome-extension-content-script-not-loaded-until-page-is-refreshed
     https://stackoverflow.com/questions/63647840/unchecked-runtime-lasterror-cannot-access-contents-of-url-but-i-dont-need-to-a
 */
-
 chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
     chrome.tabs.executeScript(details.tabId, {file:"/content.js", allFrames: true});
 }, {

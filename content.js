@@ -42,13 +42,23 @@
     code in this page.
 */
 
+var extensionActivated = true;
+
 var myVideo = document.querySelector('video');
 var setForAdvertisement = false;
+
+chrome.runtime.onMessage.addListener(
+    function(request) {
+        if(request.message === "toggleAdReplacer") {
+            extensionActivated = request.extensionActivated;
+        }
+    }
+);
 
 // Function derived and modified from "edited_generic_player.js" from Sensible Cinema (checkStatus)
 function checkForAdvertisement() {
     var adIndicator = document.querySelector('.ytp-ad-player-overlay');
-    if(adIndicator) { // Ad is playing
+    if((adIndicator) && (extensionActivated)) { // Ad is playing and extension is active
         if(setForAdvertisement === false) {
             console.log('ad just started');
             setForAdvertisement = true;
@@ -56,7 +66,7 @@ function checkForAdvertisement() {
             myVideo.style.opacity = 0;
         }
     }
-    else { // Ad is over now
+    else { // Ad is over now or the extension was deactivated
         if(setForAdvertisement === true) {
             console.log('ad just ended');
             setForAdvertisement = false;
