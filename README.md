@@ -32,3 +32,5 @@ Play It My Way Source Code Link: https://github.com/rdp/sensible-cinema/
 3. Click "Load Temporary Add-on"
 
 4. Select the "manifest.json" file inside the "video-ad-replacer" folder
+
+(For Firefox Testing: Since Firefox can only install unsigned extensions as temporary add-ons, you will need to reload the extension each time you restart the browser.)
