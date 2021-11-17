@@ -77,3 +77,5 @@ function checkForAdvertisement() {
 }
 
 setInterval(checkForAdvertisement, 10); // Keep interval going in case there's another ad
+
+// Check if needs storage to keep extension from turning on when not wanted?
