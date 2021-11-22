@@ -50,7 +50,9 @@ var setForAdvertisement = false;
 chrome.runtime.onMessage.addListener(
     function(request) {
         if(request.message === "toggleAdReplacer") {
-            extensionActivated = request.extensionActivated;
+            chrome.storage.local.get(['adReplacerOn'], function(result) {
+                extensionActivated = result.adReplacerOn;
+            });
         }
     }
 );
@@ -78,4 +80,4 @@ function checkForAdvertisement() {
 
 setInterval(checkForAdvertisement, 10); // Keep interval going in case there's another ad
 
-// Check if needs storage to keep extension from turning on when not wanted?
+// Add promise error handling?

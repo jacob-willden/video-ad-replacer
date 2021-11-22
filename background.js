@@ -44,8 +44,9 @@ chrome.browserAction.setBadgeText({text: "On"});
 
 chrome.browserAction.onClicked.addListener(function() {
     extensionActivated = !extensionActivated;
+    chrome.storage.local.set({adReplacerOn: extensionActivated});
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {message: "toggleAdReplacer", extensionActivated: extensionActivated});
+        chrome.tabs.sendMessage(tabs[0].id, {message: "toggleAdReplacer"});
     });
     if(extensionActivated) {
         chrome.browserAction.setBadgeText({text: "On"});
@@ -55,3 +56,5 @@ chrome.browserAction.onClicked.addListener(function() {
     }
     console.log("extensionActivated: " + extensionActivated);
 });
+
+// Add promise error handling?
