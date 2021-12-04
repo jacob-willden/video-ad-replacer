@@ -32,7 +32,7 @@
 
 function handleUpdated(tabId, changeInfo) {
 	if (changeInfo.url) {
-    	console.log("URL changed to " + changeInfo.url);
+    	//console.log("URL changed to " + changeInfo.url);
 		chrome.tabs.executeScript({file: "/content.js"});
     }
 }
@@ -54,7 +54,7 @@ chrome.browserAction.onClicked.addListener(function() {
     else {
         chrome.browserAction.setBadgeText({text: "Off"});
     }
-    console.log("extensionActivated: " + extensionActivated);
+    //console.log("extensionActivated: " + extensionActivated);
 });
 
 // Add promise error handling?

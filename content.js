@@ -62,7 +62,7 @@ function checkForAdvertisement() {
     var adIndicator = document.querySelector('.ytp-ad-player-overlay');
     if((adIndicator) && (extensionActivated)) { // Ad is playing and extension is active
         if(setForAdvertisement === false) {
-            console.log('ad just started');
+            //console.log('ad just started');
             setForAdvertisement = true;
             myVideo.muted = true;
             myVideo.style.opacity = 0;
@@ -70,7 +70,7 @@ function checkForAdvertisement() {
     }
     else { // Ad is over now or the extension was deactivated
         if(setForAdvertisement === true) {
-            console.log('ad just ended');
+            //console.log('ad just ended');
             setForAdvertisement = false;
             myVideo.muted = false;
             myVideo.style.opacity = '';
