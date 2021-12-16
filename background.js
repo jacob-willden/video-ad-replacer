@@ -30,6 +30,8 @@
     code in this page.
 */
 
+'use strict';
+
 function handleUpdated(tabId, changeInfo) {
 	if (changeInfo.url) {
     	//console.log("URL changed to " + changeInfo.url);

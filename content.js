@@ -42,6 +42,8 @@
     code in this page.
 */
 
+'use strict';
+
 var extensionActivated = true;
 
 var myVideo = document.querySelector('video');
