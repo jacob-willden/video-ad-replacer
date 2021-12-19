@@ -34,3 +34,13 @@ Play It My Way Source Code Link: https://github.com/rdp/sensible-cinema/
 4. Select the "manifest.json" file inside the "video-ad-replacer" folder
 
 (For Firefox Testing: Since Firefox can only install unsigned extensions as temporary add-ons, you will need to reload the extension each time you restart the browser.)
+
+### Safari (for testing purposes)
+
+Since Apple does not allow Safari extensions that use GPL-licensed code, I made the extension's functionality available as a user script instead.
+
+1. Install a user script extension for Safari through the App Store, such as Tampermonkey or Userscripts
+
+2. Copy the user script, available here: https://gist.github.com/jacob-willden/c0483aaf56ad48965ac2c9d0a1c350c4
+
+3. Paste the script into the user script extension and save it
