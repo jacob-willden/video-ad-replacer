@@ -82,4 +82,5 @@ function checkForAdvertisement() {
 
 setInterval(checkForAdvertisement, 10); // Keep interval going in case there's another ad
 
+// Figure out how to include images, patterns, etc, in both the extension and the user script
 // Add promise error handling?
