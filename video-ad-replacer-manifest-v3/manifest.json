@@ -1,12 +1,13 @@
 {
-    "name": "Video Ad Replacer",
-    "description": "Support content creators while replacing video advertisements with pleasant alternatives.",
+    "name": "__MSG_extensionName__",
+    "description": "__MSG_extensionDescription__",
     "version": "0.0.0.1",
     "manifest_version": 3,
+    "default_locale": "en",
+    "action": {},
     "permissions": ["storage", "scripting"],
     "host_permissions": ["https://*.youtube.com/*"],
     "background": {"service_worker": "background.js"},
-    "browser_action": {},
     "content_scripts": [{
         "all_frames": true, 
         "js": ["content.js"],

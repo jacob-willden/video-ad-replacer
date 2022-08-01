@@ -42,19 +42,19 @@ function handleUpdated(tabId, changeInfo) {
 chrome.tabs.onUpdated.addListener(handleUpdated);
 
 var extensionActivated = true;
-chrome.browserAction.setBadgeText({text: "On"});
+chrome.action.setBadgeText({text: "On"});
 
-chrome.browserAction.onClicked.addListener(function() {
+chrome.action.onClicked.addListener(function() {
     extensionActivated = !extensionActivated;
     chrome.storage.local.set({adReplacerOn: extensionActivated});
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {message: "toggleAdReplacer"});
     });
     if(extensionActivated) {
-        chrome.browserAction.setBadgeText({text: "On"});
+        chrome.action.setBadgeText({text: "On"});
     }
     else {
-        chrome.browserAction.setBadgeText({text: "Off"});
+        chrome.action.setBadgeText({text: "Off"});
     }
     //console.log("extensionActivated: " + extensionActivated);
 });
