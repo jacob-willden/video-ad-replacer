@@ -35,7 +35,7 @@
 function handleUpdated(tabId, changeInfo) {
 	if (changeInfo.url) {
     	//console.log("URL changed to " + changeInfo.url);
-		chrome.scripting.executeScript({file: "/content.js"});
+		chrome.scripting.executeScript({files: ["/content.js"], target: {tabId: tabId}});
     }
 }
 
