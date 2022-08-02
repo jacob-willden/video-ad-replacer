@@ -21,7 +21,7 @@ The source code is freely available to copy and build on, released under the GNU
 
 3. Click the "Load unpacked" button
 
-4. Select the "video-ad-replacer" folder
+4. Inside the "video-ad-replacer" folder, either select the "video-ad-replacer-manifest-v3" folder or the "video-ad-replacer-manifest-v2" folder
 
 ### Firefox (for testing purposes)
 
@@ -31,9 +31,11 @@ The source code is freely available to copy and build on, released under the GNU
 
 3. Click "Load Temporary Add-on"
 
-4. Select the "manifest.json" file inside the "video-ad-replacer" folder
+4. Inside the "video-ad-replacer" folder, select the "manifest.json" file inside either the "video-ad-replacer-manifest-v3" folder or the "video-ad-replacer-manifest-v2" folder
 
-(For Firefox Testing: Since Firefox can only install unsigned extensions as temporary add-ons, you will need to reload the extension each time you restart the browser.)
+The folder you select will depend on your browser and browser version. If it supports manifest version 3, select the folder that ends in "manifest-v3". Otherwise, select the folder that ends in "manifest-v2".
+
+For Firefox Testing: Since Firefox can only install unsigned extensions as temporary add-ons, you will need to reload the extension each time you restart the browser.
 
 ### Safari (for testing purposes)
 
