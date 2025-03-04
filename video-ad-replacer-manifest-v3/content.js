@@ -22,8 +22,8 @@
     "html5_javascript" folder from the Sensible Cinema (Play It My Way)
     repository (source link above), and it is explicitly labled as so.
 
-    Some code below is derived from the "script.user.js" source code file
-    linked above, and is explicitly labeled as so.
+    Some code below is modified from the Auto Skip Youtube Ads JavaScript
+    file linked above, and is explicitly labeled as so.
 
     Afformentioned source code derived and modified by Jacob Willden
     Inital Date of Derivation/Modification: November 5, 2021
