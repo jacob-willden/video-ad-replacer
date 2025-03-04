@@ -67,8 +67,8 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
-/* Function derived and modified from "script.user.js" from Auto Skip
-YouTube Ads, which is under the MIT License (Expat Varation):
+/* Function derived and modified from Auto Skip YouTube Ads,
+which is under the MIT License (Expat Varation):
 
 Copyright (c) 2024 tientq64
 
