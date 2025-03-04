@@ -7,7 +7,7 @@ Many advertisements on video services like Youtube are inappropriate or center a
 ## Source Code
 The source code is freely available to copy and build on, released under the GNU General Public License (GNU GPL). It is linked below, along with the source code for Play It My Way (Sensible Cinema), which this project is built on:
 
-[Project Source Code Link](https://github.com/jacob-willden/video-ad-replacer/)
+[Project Source Code Link](https://codeberg.org/jacobwillden/video-ad-replacer)
 
 [Play It My Way Source Code Link](https://github.com/rdp/sensible-cinema/)
 
@@ -41,8 +41,9 @@ For Firefox Testing: Since Firefox can only install unsigned extensions as tempo
 
 Since Apple does not allow Safari extensions that use GPL-licensed code, I made the extension's functionality available as a user script instead.
 
-1. Install a user script extension for Safari through the App Store, such as Tampermonkey or Userscripts
+1. Install a user script extension for Safari through the App Store, such
+as Violentmonkey or Userscripts
 
-2. Copy the [user script, available through Github Gists](https://gist.github.com/jacob-willden/c0483aaf56ad48965ac2c9d0a1c350c4)
+2. Copy the [user script](https://codeberg.org/jacobwillden/video-ad-replacer/src/branch/main/video-ad-replacer.user.js)
 
 3. Paste the script into the user script extension and save it

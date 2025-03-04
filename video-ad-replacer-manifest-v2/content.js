@@ -90,7 +90,7 @@ function skipIfPossible() {
 
 // Function derived and modified from "edited_generic_player.js" from Sensible Cinema (checkStatus)
 function checkForAdvertisement() {
-    var adIndicator = document.querySelector('.ytp-ad-player-overlay');
+    var adIndicator = document.querySelector('.ytp-ad-player-overlay, .ytp-ad-button-icon');
     if((adIndicator) && (extensionActivated)) { // Ad is playing and extension is active
         if(setForAdvertisement === false) {
             //console.log('ad just started');
