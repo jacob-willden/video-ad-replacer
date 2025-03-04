@@ -1,15 +1,10 @@
 # video-ad-replacer
 Support content creators while replacing video advertisements with pleasant alternatives.
 
+[Project Source Code on Codeberg](https://codeberg.org/jacobwillden/video-ad-replacer)
+
 ## Introduction
 Many advertisements on video services like Youtube are inappropriate or center around highly sensitive topics. While one can normally click a link to "Stop seeing this ad" on Youtube, not all ads provide this option, including ads that can be demeaning or otherwise uncomfortable to the viewer. In response, many viewers have looked to ad-blockers, at the expense of being unable to financially support content creators or others. This extension is meant to act as a compromise, where video advertisements will play through, but the video is hidden and the audio is muted for the duration of each advertisement. In the future, I intend to have it include images, patterns, and so on in place of the video ads (still trying to figure out how, particularly for the user script version).
-
-## Source Code
-The source code is freely available to copy and build on, released under the GNU General Public License (GNU GPL). It is linked below, along with the source code for Play It My Way (Sensible Cinema), which this project is built on:
-
-[Project Source Code Link](https://codeberg.org/jacobwillden/video-ad-replacer)
-
-[Play It My Way Source Code Link](https://github.com/rdp/sensible-cinema/)
 
 ## Installation Instructions
 
