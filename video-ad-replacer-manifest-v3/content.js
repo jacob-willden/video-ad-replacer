@@ -1,7 +1,7 @@
 /*
     @source: https://github.com/jacob-willden/video-ad-replacer/
     @source: https://github.com/rdp/sensible-cinema/
-    @source: https://github.com/tientq64/userscripts/blob/main/scripts/auto-skip-youtube-ads/script.user.js
+    @source: https://greasyfork.org/en/scripts/498197-auto-skip-youtube-ads
 
     @licstart  The following is the entire license notice for the
     code in this page.
