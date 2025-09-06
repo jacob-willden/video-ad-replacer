@@ -1,5 +1,5 @@
 # Video Ad Replacer
-Support content creators while replacing video advertisements with pleasant alternatives.
+Support content creators while replacing video advertisements with pleasant alternatives (GitHub mirror).
 
 [Project Source Code on Codeberg](https://codeberg.org/jacobwillden/video-ad-replacer)
 
